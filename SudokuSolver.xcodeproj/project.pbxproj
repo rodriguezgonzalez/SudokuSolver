@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6AD0FDE22DD7DD7A005AE64D /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AD0FDE12DD7DD6C005AE64D /* Readme.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6AD0FDB72DD7DA32005AE64D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,7 +31,27 @@
 		6AD0FDA62DD7DA32005AE64D /* SudokuSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD0FDB62DD7DA32005AE64D /* SudokuSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD0FDC02DD7DA32005AE64D /* SudokuSolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuSolverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD0FDE12DD7DD6C005AE64D /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6AD0FDDF2DD7DD3E005AE64D /* Exceptions for "SudokuSolverUITests" folder in "SudokuSolverTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SudokuSolverUITests.swift,
+				SudokuSolverUITestsLaunchTests.swift,
+			);
+			target = 6AD0FDB52DD7DA32005AE64D /* SudokuSolverTests */;
+		};
+		6AD0FDE02DD7DD3E005AE64D /* Exceptions for "SudokuSolverUITests" folder in "SudokuSolverUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SudokuSolverUITests.swift,
+				SudokuSolverUITestsLaunchTests.swift,
+			);
+			target = 6AD0FDBF2DD7DA32005AE64D /* SudokuSolverUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6AD0FDA82DD7DA32005AE64D /* SudokuSolver */ = {
@@ -40,8 +64,12 @@
 			path = SudokuSolverTests;
 			sourceTree = "<group>";
 		};
-		6AD0FDC32DD7DA32005AE64D /* SudokuSolverUITests */ = {
+		6AD0FDDC2DD7DD3E005AE64D /* SudokuSolverUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6AD0FDDF2DD7DD3E005AE64D /* Exceptions for "SudokuSolverUITests" folder in "SudokuSolverTests" target */,
+				6AD0FDE02DD7DD3E005AE64D /* Exceptions for "SudokuSolverUITests" folder in "SudokuSolverUITests" target */,
+			);
 			path = SudokuSolverUITests;
 			sourceTree = "<group>";
 		};
@@ -75,9 +103,10 @@
 		6AD0FD9D2DD7DA32005AE64D = {
 			isa = PBXGroup;
 			children = (
+				6AD0FDE12DD7DD6C005AE64D /* Readme.md */,
 				6AD0FDA82DD7DA32005AE64D /* SudokuSolver */,
 				6AD0FDB92DD7DA32005AE64D /* SudokuSolverTests */,
-				6AD0FDC32DD7DA32005AE64D /* SudokuSolverUITests */,
+				6AD0FDDC2DD7DD3E005AE64D /* SudokuSolverUITests */,
 				6AD0FDA72DD7DA32005AE64D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +161,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				6AD0FDB92DD7DA32005AE64D /* SudokuSolverTests */,
+				6AD0FDDC2DD7DD3E005AE64D /* SudokuSolverUITests */,
 			);
 			name = SudokuSolverTests;
 			packageProductDependencies = (
@@ -152,9 +182,6 @@
 			);
 			dependencies = (
 				6AD0FDC22DD7DA32005AE64D /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6AD0FDC32DD7DA32005AE64D /* SudokuSolverUITests */,
 			);
 			name = SudokuSolverUITests;
 			packageProductDependencies = (
@@ -219,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD0FDE22DD7DD7A005AE64D /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
